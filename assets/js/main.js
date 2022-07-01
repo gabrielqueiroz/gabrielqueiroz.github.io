@@ -18,16 +18,33 @@ document.addEventListener('keydown', function(e) {
   var key = konamyKeys[e.keyCode];
   var requiredKey = konamiCode[konamiCodePosition];
 
+  var konamiToast = document.getElementById('konamiToast')
+  var toastContent = document.getElementById('toastContent')
+  var konamiToastInstance = bootstrap.Toast.getOrCreateInstance(konamiToast)
+
   if (key == requiredKey) {
-    console.log(key)
     konamiCodePosition++;
+
+    if (key === 'a' || key === 'b') {
+      toastContent.innerHTML += "<b>" + key.toUpperCase() + "</b>&nbsp;"
+    } else {
+      toastContent.innerHTML += "<i class=\"fa fa-arrow-" + konamyKeys[e.keyCode] + "\"></i>&nbsp;"
+    }
+    konamiToastInstance.show()
 
     if (konamiCodePosition == konamiCode.length) {
       changeStyle();
+
       konamiCodePosition = 0;
+
+      toastContent.innerHTML = "";
+      konamiToastInstance.dispose()
     }
   } else {
     konamiCodePosition = 0;
+
+    toastContent.innerHTML = "";
+    konamiToastInstance.dispose()
   }
 });
 
