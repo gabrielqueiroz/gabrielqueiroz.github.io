@@ -38,16 +38,16 @@ function changeStyle() {
     makeItInvisible('work')
     makeItVisible('konami')
 
-    // document.body.classList.add('konami-background')
-    document.body.style.backgroundColor = "lightyellow";
+    document.body.classList.add('konami-background')
+    // document.body.style.backgroundColor = "lightyellow";
   } else {
     currentStyle = 'work'
 
     makeItInvisible('konami')
     makeItVisible('work')
 
-    document.body.style.backgroundColor = "lightgray";
-    // document.body.classList.remove('konami-background')
+    // document.body.style.backgroundColor = "lightgray";
+    document.body.classList.remove('konami-background')
   }
 }
 

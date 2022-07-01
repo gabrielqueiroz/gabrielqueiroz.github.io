@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   background-color: lightgrey;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
@@ -151,7 +150,7 @@ a {
 
 @keyframes bgcolorchange {
   0% {
-    background-color: lightcoral;
+    background-color: lightblue;
   }
   25% {
     background-color: lightgreen;
@@ -160,10 +159,10 @@ a {
     background-color: lightgoldenrodyellow;
   }
   75% {
-    background-color: lightgoldenrodyellow;
+    background-color: lightsalmon;
   }
   100% {
-    background-color: lightcoral;
+    background-color: lightblue;
   }
 }
 
@@ -174,3 +173,10 @@ a {
       75%  {background: lightgreen;}
       100% {background: lightblue;}
  }
+
+ .rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
