@@ -1,541 +1,524 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en-us"> <!--<![endif]-->
-<head>
-    <title>Gabriel Queiroz - Software Developer</title>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Gabriel Queiroz - Software Developer</title>
     <meta name="description" content="Portfolio Online, Gabriel Queiroz - Software Developer">
     <meta name="author" content="Gabriel Queiroz">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="container">
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Gabriel Queiroz" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Gabriel Queiroz</h1>
-                <h2 class="desc">Software Developer</h2>
-                <ul class="social list-inline">
-                    <li><a href="https://www.linkedin.com/in/gabrielfatec"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/gabrielqueiroz"><i class="fa fa-github-alt"></i></a></li>
-                    <li><a href="https://bitbucket.org/gabrielqueiroz/"><i class="fa fa-bitbucket"></i></a></li>
-                    <li><a href="https://medium.com/@gabrielqueiroz"><i class="fa fa-medium"></i></a></li>
-                    <li class="last-item"><a href="mailto:gabriel.fatec@hotmail.com"><i class="fa fa-envelope"></i></a></li>
-                </ul>
+  </head>
+  <body>
+    <!-- Work Portfolio -->
+    <div class="animate__animated" id="work">
+        <!-- About Me -->
+        <div class="container content">
+            <div class="profile-padding">
+                <div class="card shadow animate__animated animate__fadeInLeft">
+                    <div class="card-body profile-padding-content text-center" data-bs-toggle="collapse" href="#aboutme" role="button" aria-expanded="false" aria-controls="aboutme">
+                        <div class="position-absolute top-0 start-120px translate-middle">
+                            <img class="profile-image shadow" src="assets/images/profile.jpeg" alt="Gabriel Queiroz" />
+                        </div>
+                        <div class="aboutme-content">
+                            <p>
+                                <h3>Hi, 👋</h3>
+                                <h2>I'm <b>Gabriel Queiroz</b></h2>
+                            </p>
+                            <p>
+                                <h5><b>Software Developer</b> since <b>2011</b> 💻</h5>
+                            </p>
+                            <p>
+                                Born and raised in <b>São Paulo</b> 🇧🇷 living in <b>Vancouver</b> 🇨🇦 since 2018
+                            </p>
+                        </div>
+                        <div class="collapse multi-collapse" id="aboutme">
+                            <hr>
+                            <b>Education</b> 🎓
+                            <p>
+                                <h6>Graduated in <b>System Analysis and Development</b> at <b>FATEC, São Paulo</b> 🇧🇷 </h6>
+                                <h6>with an extension bachelor's degree in <b>Computer Science</b> at <b>University of New Orleans, Louisiana</b> 🇺🇸 </h6>
+                            </p>
+                            <hr>
+                            <p>
+                                <b>Core Skills</b> 🔧
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><small>Design scalable, robust and resilient software architecture</small></li>
+                                            <li class="list-group-item"><small>Development processes on Agile, Scrum and Kanban</small></li>
+                                            <li class="list-group-item"><small>Version Control using Github and BitBucket</small></li>
+                                            <li class="list-group-item"><small>Continuous integration tools such as Jenkins, CircleCI, Codeship and Codefresh</small></li>
+                                            <li class="list-group-item"><small>Database SQL such as MySQL, PostgreSQL and NoSQL such as Redis, MongoDB</small></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><small>Search-engine tools such as ElasticSearch</small></li>
+                                            <li class="list-group-item"><small>Event Sourcing and Messaging using Apache Kafka and RabbitMQ</small></li>
+                                            <li class="list-group-item"><small>Background Procession using Sidekiq Pro and Resque</small></li>
+                                            <li class="list-group-item"><small>Container orchestration using Amazon Elastic Container Service</small></li>
+                                            <li class="list-group-item"><small>Application Monitoring using New Relic, Sentry, Scout and AWS Cloud Watch</small></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
-    <div class="container sections-wrapper">
+        <!-- Work Experience -->
+        <div class="background-title text-center animate__animated animate__fadeInLeft">
+            <b>Work Experience</b>
+        </div>
 
-        <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                          <p>Technologist graduated in System Analysis and Development at Technology College (Brazil, São Paulo) with an extension bachelor degree in Computer Science at University of New Orleans (USA, Louisiana).</p>
-                          <p>
-                            <b>Core Skills:</b>
-                            <ul class="list-unstyled">
-                              <li>• Design scalable, robust and resilient software architecture.</li>
-                              <li>• Development processes on Agile, Scrum and Kanban.</li>
-                              <li>• Version Control using Github and BitBucket.</li>
-                              <li>• Continuous integration tools such as Jenkins, CircleCI, Codeship and Codefresh.</li>
-                              <li>• Database SQL such as MySQL, PostgreSQL and NoSQL such as Redis, MongoDB.</li>
-                              <li>• Search-engine tools such as ElasticSearch.</li>
-                              <li>• Event Sourcing and Messaging using Apache Kafka and RabbitMQ.</li>
-                              <li>• Background Procession using Sidekiq Pro and Resque.</li>
-                              <li>• Application Monitoring using New Relic, Sentry, Scout and AWS Cloud Watch.</li>
-                              <li>• Container orchestration using Amazon Elastic Container Service.</li>
-                            </ul>
-                          </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="experience section">
-                    <div class="section-inner collapse-section">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-briefcase"></i> Senior Software Developer & Development Team lead - <a href="https://tractionguest.com/" target="_blank">Traction Guest</a>
-                                <span class="label label-theme">(May 2019 - Present)</span></h3>
-                                <p>Provided technical leadership to teammates through coaching and mentorship. Identified bottlenecks and bugs, devising solutions through the development team. Assisted in the collection and documentation of user requirements, development of user stories as well as estimates and work plans. Lead the packaging and release process for new features.</p>
-                                <p>Career Highlights:
-                                  <ul class="list-unstyled">
-                                    <li>• Led the Enhancements Team responsible for Traction Guest applications enhancements.</li>
-                                    <li>• Coordinated features releases for the Traction Guest server and web app.</li>
-                                    <li>• Implemented background jobs for Bulk Actions using Sidekiq Pro; Disseminated the knowledge on this topic to other teams through presentations and documentation.</li>
-                                </p>
-                            </div>
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-briefcase"></i> Software Developer - <a href="https://tractionguest.com/" target="_blank">Traction Guest</a>
-                                <span class="label label-theme">(Aug 2018 - May 2019)</span></h3>
-                                <p>Responsible for designing, building, and maintaining code for Traction Guest applications; collaborating with the CTO, Software Developers, Project Managers and Customer Success. Participated in peer to peer code reviews, using this as an opportunity to drive coding best practices. Integrated user-facing elements developed by front-end developers with server-side logic. Helped maintain code quality, organization and automatization of the platform and developer tooling.</p>
-                                <p>Career Highlights:
-                                  <ul class="list-unstyled">
-                                    <li>• Part of the on-call team responsible for treating production incidents.</li>
-                                    <li>• Increased observability through the app using Sentry and Librato.</li>
-                                    <li>• Designed and implemented read only queries to increase performance for Ruby on Rails application.</li>
-                                    <li>• Coordinated DevOps activities during the early stages of the Development team; managed applications on Cloud Services using Heroku, Amazon, and Cloud66.</li>
-                                </p>
-                            </div>
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-briefcase"></i> Software Developer - <a href="https://wirecard.com.br/" target="_blank">Wirecard Brasil</a> 
-                                <span class="label label-theme">(Feb 2016 - Jun 2018)</span></h3>
-                                <p>Responsible for designing RESTful APIs on highly distributed applications mostly in Java, Kotlin, and Ruby. Member of the Outflow Products team collaborating with Software Developers, Product Owners, and Customer Success. Primarily focused on customer facing financial features, such as: account balances, financial statements, transfers to bank accounts, and financial reconciliation.</p>
-                                <p>Career Highlights:
-                                  <ul class="list-unstyled">
-                                    <li>• Implemented Event Sourcing using Apache Kafka, working with Stream Processors and Kafka Connectors. Disseminated the knowledge on this topic to other teams through presentations and documentations.</li>
-                                    <li>• Designed integrations between Wirecard Brazil and Wirecard Core application for prepaid CreditCard functionalities, such as but not limited to issuing a CreditCard and validating available balance.</li>
-                                    <li>• Managed cloud applications with Amazon Elastic Container Service and Amazon EC2 for instances and load balancers.</li>
-                                    <li>• Creator of IfMan and RCurtain, and contributor of JCurtain; OpenSource tools for Feature Flags developed for Java and Ruby, currently being used to manage feature flags at Moip.</li>
-                                    <li>• Elaboratored financial statements and reports using ElasticSearch and MySQL.</li>
-                                    <li>• Managed continuous integration and continuous deployment using Jenkins and CircleCI.</li>
-                                    <li>• Member of the Architecture Guild design to help other teams to make architecture decisions.</li>
-                                </p>
-                            </div>
-                            <div class="collapse-group">
-                              <div class="item collapse">
-                                  <h3 class="title"><i class="fa fa-briefcase"></i> Network Engineer Trainee - <a href="https://www.tdec.com.br/" target="_blank">TDec Network Group</a>
-                                  <span class="label label-theme">(Jun 2015 - Dec 2015)</span></h3>
-                                  <p>Developed web tool application using Javascript and JQuery to assist in the elaboration of switches configurations. Configuration of Switches (Extreme, CISCO and Juniper) and Application Firewall (Palo Alto Network). Proof of concept (POC) participation, execution and maintenance of Palo Alto Firewall, helping to create object configuration scripts, rules and information integration with LDAP.</p>
-                                  <p>User support for IMB Notes and other corporate softwares. Management of the enterprise domain server, responsible for creating and managing new users, Group Policy (GPO). Management of the company's computer equipment, such as Notebooks and Desktops.</p>
-                              </div>
-                              <div class="item collapse">
-                                  <h3 class="title"><i class="fa fa-graduation-cap"></i> Unity Developer - <a href="http://nil.cs.uno.edu/" target="_blank">Narrative Intelligence Laboratory</a>
-                                  <span class="label label-theme">(Jan 2015 - May 2015)</span></h3>
-                                  <p>Part of the academic software development team at the University of New Orleans (Louisiana, USA) as Unity developer, using Unity 5.1 with Javascript and C#.</p>
-                                  <p>Direct interaction on all stages of software development such as:
-                                      <ul class="list-unstyled">
-                                        <li>• Software requirement specification.</li>
-                                        <li>• Software modeling and prototyping.</li>
-                                        <li>• Validation of requirements based on the development of application modules.</li>
-                                  </p>
-                              </div>
-                              <div class="item collapse">
-                                  <h3 class="title"><i class="fa fa-briefcase"></i> IT Trainee - <a href="http://www.iclbrasil.com.br/" target="_blank">ICL Brasil</a>
-                                  <span class="label label-theme">(May 2012 - Mar 2014)</span></h3>
-                                  <p>Support for local, visitors and temporary foreign users with email (Microsoft Exchange) and systems used in the company (SAP, LoyalISO, etc). Assisted with SAP version update tracking. Direct contact with the US IT team supporting global company policy.</p>
-                                  <p>Duties and responsibilities included taking care of:
-                                    <ul class="list-unstyled">
-                                        <li>• Monitor and maintain virtual machines using VMWare vSphere, and Robotic Backup using Symantec BackupExec.</li>
-                                        <li>• IT resources, contracts, and telephony services.</li>
-                                        <li>• IT documents such as disaster recovery plan (DRP), business continuity plan (BCN), support documentation and inventory of Hardware and Software, where he developed a tool for automatic inventory management using VBScript.</li>
-                                        <li>• Enterprise domain server, and management of group policies (GPO).</li>
-                                  </p>
-                              </div>
-                              <div class="item collapse">
-                                  <h3 class="title"><i class="fa fa-briefcase"></i> IT Instructor - <a href="http://microcamp.com.br/" target="_blank">Microcamp</a>
-                                  <span class="label label-theme">(Mar 2011 - Apr 2012)</span></h3>
-                                  <p>IT instructor assisting and guiding new students.<br>
-                                    <ul class="list-unstyled">
-                                        <li>• Hardware Instructor: Maintenance of Computers, Printers and Notebooks.</li>
-                                        <li>• Basic WebDesign Instructor: HTML, CSS, JavaScript, Photoshop and Corel Draw.</li>
-                                        <li>• Basic Computing Instructor: Windows 7 and Microsoft Office. Advanced Excel.</li>
-                                        <li>• Dedicated Microsoft Office 2017 Excel course.</li>
-                                  </ul>
-                                  </p>
-                              </div>
-                              <p><a class="more-link collapse-btn" href="#"><i class="fa fa-plus-square-o"></i> More Work Experiences</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projects &amp; Academic References</h2>
-                        <div class="content">
-                            <div class="item">
-                                <p class="summary"><h3 class="title"><a href="http://ifman.herokuapp.com/" target="_blank"><i class="fa fa-briefcase"></i> IfMan &amp; RCurtain </a></h3></p>
-                                <center>
-                                    <div class="col-md-6 col-xs-12">
-                                        <a href="http://ifman.herokuapp.com" target="_blank">
-                                            <p><img class="img-responsive project-image" src="assets/images/projects/ifman.png" alt="IfMan" /></p>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <span class="label label-theme">OpenSource</span>
-                                        <span class="label label-theme">Java</span>
-                                        <span class="label label-theme">Ruby</span>
-                                        <span class="label label-theme">Rails</span>
-                                        <span class="label label-theme">Redis</span>
-                                        <span class="label label-theme">Heroku</span>
-                                        <span class="label label-theme">Material Design</span>
-                                    </p>
-                                </center>
-
-                                <p class="summary">IfMan is a GUI (Graphical User Interface) for Curtain, that helps the management of new features controlling for users. It works with simple data structures using Redis. With this, you can set a percentage to your feature to control it, such as "every time that someone login, it has 50% of chance to login using my new service". Or you can set specific values, such as "The user A, B and C can see that feature". It's perfect for A/B testing or paid features.</p>
-
-                                <br />
-                                <p class="summary">
-                                  <strong>Authors:</strong> Andre Protti, Breno Oliveira, Carlos Menezes, Danillo Souza and Gabriel Queiroz. </br>
-                                  <strong>Articles:</strong> <a href="https://medium.com/wirecardbrasil/ifman-seu-super-her%C3%B3i-para-features-e-testes-a-b-fb4da2b0c320" target="_blank"></i> IFMAN your super-hero for Features and A/B testing (PT-BR)</a>.</br>
-                                  <strong>Talks:</strong> <a href="https://youtu.be/Yw9F4ifkIk0?t=1432" target="_blank"></i> VanRuby Lightning Talks: Intro to RCurtain (EN)</a>.
-                                </p>
-
-                                <div class="col-md-6 col-xs-12 item">
-                                    <a class="more-link" href="https://ifman.herokuapp.com/"><i class="fa fa-external-link"></i>Check on HerokuApp</a><br>
-                                    <p><a class="more-link" href="https://github.com/wirecardBrasil/ifman"><i class="fa fa-github-square"></i>Check on github (IfMan)</a><br>
-                                </div>
-
-                                <div class="col-md-6 col-xs-12 item">
-                                    <a class="more-link" href="https://github.com/wirecardBrasil/rcurtain"><i class="fa fa-github-square"></i>Check on github (RCurtain)</a><br>
-                                    <a class="more-link" href="https://github.com/wirecardBrasil/jcurtain"><i class="fa fa-github-square"></i>Check on github (JCurtain)</a><br></p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                              <p class="summary"><h3 class="title"><a href="http://piggyb.herokuapp.com/" target="_blank"><i class="fa fa-briefcase"></i> Piggy•B</a></h3></p>
-                              <center>
-                                  <div class="col-md-6 col-xs-12">
-                                      <a href="http://piggyb.herokuapp.com" target="_blank">
-                                          <p><img class="img-responsive project-image" src="assets/images/projects/piggyb.png" alt="PiggyB" /></p>
-                                      </a>
-                                  </div>
-                                  <p>
-                                      <span class="label label-theme">OpenSource</span>
-                                      <span class="label label-theme">Ruby</span>
-                                      <span class="label label-theme">Rails</span>
-                                      <span class="label label-theme">PostgresSQL</span>
-                                      <span class="label label-theme">Heroku</span>
-                                      <span class="label label-theme">Bootstrap 4</span>
-                                      <span class="label label-theme">Codecov</span>
-                                      <span class="label label-theme">CircleCI</span>
-                                      <span class="label label-theme">Postman</span>
-                                  </p>
-                              </center>
-
-                              <p class="summary">PiggyB is a Web Application and API that helps you organize your personal finance. It allows you to create Piggy Banks for you personal savings, control your expenses and reach your goals.</p>
-                              <p class="summary">You can use it on desktop, mobile or tablet for free and even use its API to integrate with other services. Available in both English or Portuguese (BR).</p>
-
-                              <br />
-                              <p class="summary"><strong>Author:</strong> Gabriel Queiroz.</p>
-
-                              <div class="col-md-6 col-xs-12 item">
-                                  <a class="more-link" href="https://piggyb.herokuapp.com/"><i class="fa fa-external-link"></i>Check on HerokuApp</a><br>
-                                  <a class="more-link" href="https://bitbucket.org/gabrielqueiroz/piggyb/"><i class="fa fa-bitbucket"></i>Check on bitbucket</a><br>
-                              </div>
-
-                              <div class="col-md-6 col-xs-12 item">
-                                  <a class="more-link" href="https://goo.gl/3bFqXL"><i class="fa fa-file"></i>Check API documentation</a><br>
-                                  <br />
-                              </div>
-                          </div>
-
-                            <div class="item">
-                                <p class="summary"><h3 class="title"><a href="https://github.com/openwstcc/wstcc" target="_blank"><i class="fa fa-graduation-cap"></i> Collaborative Tool for Students and Teachers </a></h3></p>
-                                <center>
-                                    <div class="col-md-6 col-xs-12">
-                                        <a href="https://github.com/openwstcc/wstcc" target="_blank">
-                                            <p><img class="img-responsive project-image" src="assets/images/projects/androidtcc.png" alt="Android TCC" /></p>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <span class="label label-theme">OpenSource</span>
-                                        <span class="label label-theme">OpenShift</span>
-                                        <span class="label label-theme">Java</span>
-                                        <span class="label label-theme">Android</span>
-                                        <span class="label label-theme">JBOSS EAP</span>
-                                        <span class="label label-theme">MySQL</span>
-                                        <span class="label label-theme">RESTful APIs</span>
-                                        <span class="label label-theme">GSON</span>
-                                        <span class="label label-theme">Quartz</span>
-                                        <span class="label label-theme">Volley</span>
-                                        <span class="label label-theme">Material Design</span>
-                                    </p>
-                                </center>
-
-                                <p class="summary">End of course work of the Systems Analysis and Development course at FATEC. Focus on helping students during their academic journey, providing a collaborative tool for students and teachers, allowing a quick and practical interaction.</p>
-                                <p class="summary">Open Source code, allowing other schools and universities to use it by consuming RESTful APIs or the Android App. The project involved an Android app, having its WebService and MySQL Database hosted on Cloud.</p>
-
-                                <br />
-                                <p class="summary">
-                                  <strong>Mentors:</strong> Msc. Leandro Colevati and Msc. Wellington P. Oliveira.<br />
-                                  <strong>Students:</strong> Bruno H. Calil, Gabriel Queiroz and Victor H. Teles.
-                                </p>
-
-                                <div class="col-md-6 col-xs-12 item">
-                                    <p><a class="more-link" href="https://github.com/openwstcc/wstcc" target="_blank"><i class="fa fa-external-link"></i>More about this project</a><br>
-                                    <a class="more-link" href="https://drive.google.com/file/d/0Bzrtyg35KT0KNXZEVG83R2c5LUE/view" target="_blank"><i class="fa fa-android"></i>Download Android Application</a></p>
-                                </div>
-
-                                <div class="col-md-6 col-xs-12 item">
-                                    <p><a class="more-link" href="https://github.com/openwstcc/wstcc"><i class="fa fa-github-square"></i>Check on github (WebService)</a><br>
-                                    <a class="more-link" href="https://github.com/openwstcc/androidtcc"><i class="fa fa-github-square"></i>Check on github (Android)</a><br></p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <p class="summary"><h3 class="title"><a href="http://nil.cs.uno.edu/projects" target="_blank"><i class="fa fa-graduation-cap"></i> Reading Rocket </a></h3></p>
-                                <center>
-                                    <div class="col-md-6 col-xs-12">
-                                        <a href="http://nil.cs.uno.edu/projects" target="_blank">
-                                            <p><img class="img-responsive project-image" src="assets/images/projects/reading-rocket.png" alt="Reading Rocket" /></p>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <span class="label label-theme">JavaScript</span>
-                                        <span class="label label-theme">C#</span>
-                                        <span class="label label-theme">Unity</span>
-                                        <span class="label label-theme">Weka</span>
-                                        <span class="label label-theme">Data Mining</span>
-                                    </p>
-                                </center>
-
-                                <p class="summary">Developed at the University of New Orleans (Louisiana, USA), it aims to assist the process of assessing the reading level of high school students in the state of Louisiana in an interactive and easy way.</p>
-                                <p class="summary">The game purpose is determine reading level of a student by the data obtained while the student plays the game using data mining.</p>
-                                
-                                <br />
-                                <p class="summary">
-                                  <strong>Mentor:</strong> Dr. Stephen G. Ware.<br />
-                                  <strong>Students:</strong> Gabriel Queiroz and Rodrigo R. do Carmo.
-                                </p>
-
-                                <div class="col-md-6 col-xs-12 item">
-                                  <p>
-                                    <a class="more-link" href="http://nil.cs.uno.edu/projects" target="_blank"><i class="fa fa-external-link"></i>More about this project</a><br>
-                                  </p>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+        <div class="carousel slide animate__animated animate__fadeInLeft" data-bs-ride="true" id="workExperience">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#workExperience" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Catalyst"></button>
+                <button type="button" data-bs-target="#workExperience" data-bs-slide-to="1" aria-label="Shopify"></button>
+                <button type="button" data-bs-target="#workExperience" data-bs-slide-to="2" aria-label="Mogo"></button>
+                <button type="button" data-bs-target="#workExperience" data-bs-slide-to="3" aria-label="Guest"></button>
+                <button type="button" data-bs-target="#workExperience" data-bs-slide-to="4" aria-label="Moip"></button>
             </div>
-
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Metro Vancouver, BC. Canada</li>
-                                <li><i class="fa fa-flag"></i><span class="sr-only">Nationality:</span>Brazilian</li>
-                                <li><i class="fa fa-phone"></i><span class="sr-only">Phone:</span>+1 (236) 986 6277</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:gabriel.fatec@hotmail.com">gabriel.fatec@hotmail.com</a></li>
-                                <li><i class="fa fa-file-pdf-o"></i><span class="sr-only">Website:</span><a href="curriculum-en.pdf">Curriculum Vitae</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item collapse-section">
-                                <h3 class="title">System Analysis and Development
-                                <br></h3>
-                                <div class="span4">
-                                <p><span class="label label-theme">Faculdade de Tecnologia</span>
-                                <span class="label label-theme">(2011 - 2015)</span></p>
-                                <p>Pertinent courses content include: Software development, such as requirements gathering, software modeling and design with an emphasis on UML standards, persistence modeling for relational databases, software quality with unit and integration tests.</p>
-                                </div>
+            <div id="workExperienceInner" class="carousel-inner container content work-padding">
+                <div class="carousel-item active" id="recent-work">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#catalyst" role="button" aria-expanded="true" aria-controls="catalyst">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/catalyst_logo.jpeg" alt="Catalyst" />
                             </div>
-                            <div class="item collapse-section">
-                                <h3 class="title">Computer Science (Extension)
-                                <br></h3>
-                                <div class="span4">
-                                <p><span class="label label-theme">University of New Orleans</span>
-                                <span class="label label-theme">(2014 - 2015)</span></p>
-                                <p>Brazil Scientific Mobility Program, fully funded scholarship recipient as an undergraduate student in Computer Science at the University of New Orleans. Pertinent courses content include: Analysis of Algorithms, Mobile development, Artificial Intelligence and Game Design. As a result of my performance I was invited to join the Narrative Intelligence Lab team, working on a machine learning project for the local schools.</p>
-                                <p>As result of my performance during my stay, I was invited to join the Narrative Intelligence Lab team and work on a machine learning project for the local schools.</p>
-                                </div>
+                            <h5 class="card-title"><b>Catalyst</b> 🇺🇸</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Senior Backend Developer, since 2022</h6>
+                            <div class="collapse multi-collapse show" id="catalyst">
+                                <p class="card-text">
+                                    Backend Developer working on new features for Customer Success Platform, using Ruby on Rails.
+
+                                    <p>
+                                        Recent works involves <a href="https://catalyst.io/product/lifecycle-management">Customers Lifecycles</a>, <a href="https://catalyst.io/product/workflow-productivity">Playbooks</a> and internal tools
+                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </aside>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#shopify" role="button" aria-expanded="false" aria-controls="shopify">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/shopify_logo.jpeg" alt="Shopify" />
+                            </div>
+                            <h5 class="card-title"><b>Shopify</b> 🇨🇦</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software Developer, 2021 - 2022</h6>
+                            <div class="collapse multi-collapse" id="shopify">
+                                <p class="card-text">
+                                    Full Stack developer making commerce better for everyone, working on the core products and features for Basic to Plus merchants, using Ruby on Rails, React and Go.
 
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Relevant Skills</h2>
-                        <div class="content">
-                            <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">Ruby<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%">
-                                        </div>
-                                    </div>
-                                </div>
+                                    <p>
+                                        Worked on the core monolith Ruby on Rails app, as well as microservices for Plus merchants and 1st Party Apps.
+                                    </p>
 
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Kotlin<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Relational Database<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Cloud Computing Services<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="40%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                               <div class="item">
-                                    <h3 class="level-title">Event Sourcing<span class="level-label">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="40%">
-                                        </div>
-                                    </div>
-                                </div>
-
+                                    <p>
+                                        Highlights:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <b>Webification:</b> Migrated Ruby ERB pages into React, improving existing Rest API into GraphQL API.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>API Auditing app:</b> 1st party App to audit API requests from all Private and Public apps traffic to merchants shops.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Inventory Product:</b> Focused on improvement performance for products in many locations, investigating API requests and flamegraphs, making the overall request 20% faster and scalable for future features.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </aside>
-
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Portuguese:</strong></span>
-                                    <span class="level">Native<br><br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Advanced<br><br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                         <h2 class="heading">Articles & Talks</h2>
-                         <p>
-                           <a target="_blank" href="https://youtu.be/Yw9F4ifkIk0?t=1432"> <i class="fa fa-youtube"></i> <strong>VanRuby Lightning Talks: Intro to RCurtain</strong></a><br>Youtube, 2018 (EN).
-                         </p>
-                         <p>
-                           <a target="_blank" href="https://medium.com/@gabrielqueiroz/o-que-%C3%A9-esse-tal-de-apache-kafka-a8f447cac028#.pj08v0img"> <i class="fa fa-medium"></i> <strong>What is this Apache Kafka?</strong></a><br>Medium, 2017 (PT-BR).<br />
-                           Medium Stats: 40K views, and 36% Read Ratio as of August 2020.
-                         </p>
-                         <p>
-                           <a target="_blank" href="https://medium.com/@gabrielqueiroz/vamos-falar-sobre-event-sourcing-276ae66106f7#.jra2h0g5w"> <i class="fa fa-medium"></i> <strong>Let's talk about Event Sourcing</strong></a><br>Medium, 2017 (PT-BR).<br />
-                           Medium Stats: 11.1K views, and 59% Read Ratio as of August 2020.
-                         </p>
-                         <p>
-                           <a target="_blank" href="https://medium.com/@gabrielqueiroz/como-usar-o-kafka-jdbc-sink-connector-391ded610f3"> <i class="fa fa-medium"></i> <strong>How to use Kafka JDBC Sink Connector</strong></a><br>Medium, 2017 (PT-BR).<br />
-                           Medium Stats: 3K views, and 56% Read Ratio as of August 2020.
-                         </p>
-                         <p>
-                           <a target="_blank" href="https://medium.com/wirecardbrasil/ifman-seu-super-her%C3%B3i-para-features-e-testes-a-b-fb4da2b0c320"> <i class="fa fa-medium"></i> <strong>IFMAN your super-hero for Features and A/B testing</strong></a><br>Medium, 2017 (PT-BR).
-                         </p>
-                    </div>
-                </aside>
-
-
-                <aside class="blog aside section">
-                    <div class="section-inner collapse-section">
-                        <h2 class="heading">Courses &amp; Certifications</h2>
-                            <div class="span4 collapse-group">
-                                <p><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>Tests of Java Softwares</strong><br>Universidade de São Paulo, 30h,<span class="year"> 2016.</span> </p>
-                                <p><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>Android Development</strong><br>Samsung Ocean, 8h,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>JavaScript Fundamentals</strong><br>SoloLearn,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>Java Course</strong><br>SoloLearn,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>IT Strategic management ITIL</strong><br>Fundação Bradesco, 42h,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>COBIT Fundamentals</strong><br>Fundação Bradesco, 52h,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>IT Governance Fundamentals</strong><br>Fundação Bradesco, 29h,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-graduation-cap"></i><a href="#" target="_blank"></a> <strong>Hardware</strong><br>Microcamp Itaquera, 240h,<span class="year"> 2011.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>ASE 2014-9 - Palo ALto</strong><br>Palo Alto Accredited Sales Expert,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>IJOS - Juniper</strong><br>Intro to Junos Operating System,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>JRE - Juniper</strong><br>Junos Routing Essentials,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>ESP - Extreme</strong><br>Extreme Sales Professional,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>EDP - Extreme</strong><br>Extreme Design Professional,<span class="year"> 2015.</span> </p>
-                                <p class="collapse"><i class="fa fa-certificate"></i><a href="#" target="_blank"></a> <strong>ESE - Extreme</strong><br>Extreme Solutions Engineer,<span class="year"> 2015.</span> </p>
-                                <p><a class="more-link collapse-btn" href="#"><i class="fa fa-plus-square-o"></i> More Certifications</a></p>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#mogo" role="button" aria-expanded="false" aria-controls="mogo">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/mogo_logo.jpeg" alt="Mogo" />
                             </div>
-                    </div>
-                </aside>
+                            <h5 class="card-title"><b>Mogo</b> 🇨🇦</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software Developer, 2020 - 2021</h6>
+                            <div class="collapse multi-collapse" id="mogo">
+                                <p class="card-text">
+                                    Backend Developer working on new and existing Spend (Mogo Card) team and Platform team, using Ruby.
 
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Books</h2>
-                        <p><i class="fa fa-book"></i><a href="#" target="_blank"></a> <strong>Clean Code</strong>, Robert Cecil Martin <span class="year">(2008).</span></p>
-                        <p><i class="fa fa-book"></i><a href="#" target="_blank"></a> <strong>Software Engineering</strong>, Ian Sommerville <span class="year">(2010).</span></p>
-                        <p><i class="fa fa-book"></i><a href="#" target="_blank"></a> <strong>Princípios de análise e projeto de sistemas com UML</strong>, Eduardo Bezerra <span class="year">(2006)</span>.</p>
-                        <p><i class="fa fa-book"></i><a href="#" target="_blank"></a> <strong>Google Android</strong>, Ricardo R. Lecheta <span class="year">(2012).</span></p>
-                    </div>
-                </aside>
+                                    <p>
+                                        Primarily focused on improving the overall platform, as well as push notifications with Amazon SNS topics.
+                                    </p>
 
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap 3.2</a></li>
-                                <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwsome 4.1</a></li>
-                                <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
-                            </ul>
-
-                            <hr/>
-
-                            <p>Developed by <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley (UX designer)</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> and modified by <a href="index.html">Gabriel Queiroz</a>, under <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License.</a></p>
+                                    <p>
+                                        Highlights:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <b>Spend:</b> Implemented a new push notification flow for the Mogo App using Amazon SNS topics, introducing pub/sub for high-throughput.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Platform:</b> Worked on a major upgrade for an internal Ruby gem responsible for RPC calls across microservices, introducing new logging capabilities, metrics with Datadog StatsD, and fixing existing thread-safe issues on the previous implementation.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </aside>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#guest" role="button" aria-expanded="false" aria-controls="guest">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/guest_logo.png" alt="Guest" />
+                            </div>
+                            <h5 class="card-title"><b>Traction Guest</b> 🇨🇦</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Development Team Lead, 2019 - 2020</h6>
+                            <div class="collapse multi-collapse" id="guest">
+                                <p class="card-text">
+                                    Development Team Lead of the Enhancement teams, reponsible for cross-teams platform improvements and enablement.
+
+                                    <p>
+                                        Highlights:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <b>Releases:</b> Coordinated features releases for the Traction Guest server and web app.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Async Jobs:</b> Implemented background jobs for Bulk Actions using Sidekiq Pro, disseminating the knowledge on this topic to other teams through presentations and documentation.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Performance:</b> Improved response time of the most used API endpoint (guest's signins) in 27% by refactoring the underlying internal data structure.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Internal Tools:</b> Worked with Customer Success team to increase visibility internally, introducing Metabase for safely querying data with permissions.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </div>
+                            <hr>
+                            <h6 class="card-subtitle mb-2 text-muted">Sofware Developer, 2018 - 2019</h6>
+                            <div class="collapse multi-collapse" id="guest">
+                                <p class="card-text">
+                                    Backend Developer working on new features for Visitor Management Software, using Ruby on Rails.
+
+                                    <p>
+                                        Highlights:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <b>Features:</b> Worked on core features involving Signins, Signouts, Hosts, Invites and iPad app cache.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Incident Response:</b> Improved the on-call structure and response, helping treating critical production incident.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Observability:</b> Increased observability through the app using Sentry and Librato.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>CI/CD Pipeline:</b> Contributed with CI/CD pipeline migrating the backend to CircleCI.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Performance:</b> Designed and implemented read only queries to increase performance for Ruby on Rails application.
+                                            </li>
+                                             <li class="list-group-item">
+                                                <b>Platform:</b> Coordinated infrastructure activities during the early stages of the Development team, managing applications on Cloud Services using Heroku, Amazon, and Cloud66.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#moip" role="button" aria-expanded="false" aria-controls="moip">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/moip_logo.jpeg" alt="Moip" />
+                            </div>
+                            <h5 class="card-title"><b>Moip</b> 🇧🇷</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software Developer, 2015 - 2018</h6>
+                            <div class="collapse multi-collapse" id="moip">
+                                <p class="card-text">
+                                    Software Developer on the Outflow (former Financial) team, working on new features and micro-services using Java, Kotlin, Ruby and Go.
+
+                                    <p>
+                                        Highlights:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <b>Event Sourcing:</b> Spearheaded Event Sourcing using Apache Kafka, working with Stream Processors and Kafka Connectors. Disseminated the knowledge on this topic to other teams through presentations and documentations.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Credit Card:</b> Designed integrations between Wirecard Brazil and Wirecard Core application for prepaid CreditCard functionalities, such as but not limited to issuing a CreditCard and validating available balance.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Financial Statement:</b> Worked financial statement feature, elaborating queries using ElasticSearch and MySQL and implementating both Backend (Java) and Frontend (Ruby on Rails).
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>Open Source:</b> Contributed with IfMan, RCurtain amd JCurtain: An OpenSource tools for Feature Flags developed for Java and Ruby, used by the products team to manage feature flags at Moip.
+                                            </li>
+                                            <li class="list-group-item">
+                                                <b>CI/CD Pipeline:</b> Contributed with CI/CD pipeline migrating new and existing microservices to Circle CI 2.0.
+                                            </li>
+                                             <li class="list-group-item">
+                                                <b>Platform:</b> Managed cloud applications with Amazon Elastic Container Service and Amazon EC2 for instances and load balancers.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#workExperience" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#workExperience" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Volunteering -->
+        <div class="background-title text-center animate__animated animate__fadeInLeft">
+            <b>Volunteering</b>
+        </div>
+
+        <div class="container content work-padding">
+            <div class="card shadow animate__animated animate__fadeInLeft work-padding-content">
+                <div class="card-body">
+                    <div class="position-absolute top-0 start-100px translate-middle">
+                        <img class="work-image shadow" src="assets/images/backendstuff_logo.jpeg" alt="Backend Stuff" />
+                    </div>
+                    <h5 class="card-title"><b>Backend Stuff</b></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Mentor</h6>
+                    <p class="card-text">
+                        Backend Stuff is a community that aims to mentor people on getting started in the backend world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles & Talks -->
+        <div class="background-title text-center animate__animated animate__fadeInLeft">
+            <b>Articles & Talks</b>
+        </div>
+
+        <div class="container content work-padding animate__animated animate__fadeInLeft">
+            <div class="accordion shadow" id="extras">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa fa-youtube"></i>&nbsp;<strong>VanRuby Lightning Talks: Intro to RCurtain</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#extras">
+                    <div class="accordion-body">
+                        VanRuby is Ruby Meetup in Vancouver. Presentation about RCurtain, a Ruby Gem to help managing FeatureFlags using Redis, and IfMan a GUI built in Ruby on Rails.
+                        <br><a target="_blank" href="https://youtu.be/Yw9F4ifkIk0?t=1432">Click here to view on Youtube.</a>
+                        <small class="text-muted">(2018, EN)</small>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa fa-medium"></i>&nbsp;<strong>What is "Apache Kafka"?</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#extras">
+                    <div class="accordion-body">
+                        Introduction article dismistifying basic concepts about About Kafka.
+                        <br><a target="_blank" href="https://medium.com/@gabrielqueiroz/o-que-%C3%A9-esse-tal-de-apache-kafka-a8f447cac028#.pj08v0img">Click here to read it on Medium.</a>
+                        <small class="text-muted">(2017, PT-BR)</small>
+                        <br><small class="text-muted">Medium Stats: +40K views of August 2020.</small>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fa fa-medium"></i>&nbsp;<strong>Let's talk about Event Sourcing</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#extras">
+                    <div class="accordion-body">
+                        Introduction article about Event Sourcing.
+                        <br><a target="_blank" href="https://medium.com/@gabrielqueiroz/vamos-falar-sobre-event-sourcing-276ae66106f7#.jra2h0g5w">Click here to read it on Medium.</a>
+                        <small class="text-muted">(2017, PT-BR)</small>
+                        <br><small class="text-muted">Medium Stats: +11k views of August 2020.</small>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="fa fa-medium"></i>&nbsp;<strong>How to use Kafka JDBC Sink Connector</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#extras">
+                    <div class="accordion-body">
+                        Exemplifying Kafka Connectors, with examples of JDBC Sink Connector.
+                        <br><a target="_blank" href="https://medium.com/@gabrielqueiroz/como-usar-o-kafka-jdbc-sink-connector-391ded610f3">Click here to read it on Medium.</a>
+                        <small class="text-muted">(2017, PT-BR)</small>
+                        <br><small class="text-muted">Medium Stats: +40K views of August 2020.</small>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <i class="fa fa-medium"></i>&nbsp;<strong>IFMAN your super-hero for Features and A/B testing</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#extras">
+                    <div class="accordion-body">
+                        IfMan is a GUI for Curtain, a simple opens source Gem (RCurtain) and Java library (JCurtain) to manage feature flags.
+                        <br><a target="_blank" href="https://medium.com/wirecardbrasil/ifman-seu-super-her%C3%B3i-para-features-e-testes-a-b-fb4da2b0c320">Click here to read it on Medium.</a>
+                        <small class="text-muted">(2017, PT-BR)</small>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <div class="card shadow animate__animated animate__fadeInLeft">
+                <div class="card-body text-center">
+                    <ul class="social list-group list-group-horizontal justify-content-center">
+                        <li class="list-group-item"><a href="https://www.linkedin.com/in/gabrielfatec"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-group-item"><a href="https://github.com/gabrielqueiroz"><i class="fa fa-github-alt"></i></a></li>
+                        <li class="list-group-item"><a href="https://bitbucket.org/gabrielqueiroz/"><i class="fa fa-bitbucket"></i></a></li>
+                        <li class="list-group-item"><a href="https://medium.com/@gabrielqueiroz"><i class="fa fa-medium"></i></a></li>
+                        <li class="list-group-item"><a href="mailto:gabriel.fatec@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                    <small class="text-muted">Developed by <b>Gabriel Queiroz</b>, 2022</small>
+                    <br>
+                    <small class="text-muted">Works with <a href="https://en.wikipedia.org/wiki/Konami_Code" target="_blank" class="text-muted"><b>Konami Code™</b></a></small>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer class="footer">
-        <div class="container text-center">
-                <small class="copyright">Developed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>.
-                <br>Modified by <a href="https://www.linkedin.com/in/gabrielfatec" target="_blank">Gabriel Queiroz</a>, 2020.</small>
+    <!-- Konami Portfolio -->
+    <div class="animate_animated not-visible" id="konami">
+        <div class="container content">
+            <div class="profile-padding">
+                <div class="card shadow animate__animated animate__fadeInLeft">
+                    <div class="card-body profile-padding-content text-center" data-bs-toggle="collapse" href="#aboutme" role="button" aria-expanded="false" aria-controls="aboutme">
+                        <div class="position-absolute top-0 start-120px translate-middle">
+                            <img class="profile-image shadow" src="assets/images/bessie.png" alt="Gabriel Queiroz" />
+                        </div>
+                        <div class="aboutme-content">
+                            <p>
+                                <h4>Proud dog father of</h4>
+                                <h2><b>Bessie</b> 🐶</h2>
+                            </p>
+                            <p>
+                                Rescued in <b>California</b> 🇺🇸 living in <b>Vancouver</b> 🇨🇦 since 2021
+                            </p>
+                        </div>
+                        <div class="collapse multi-collapse" id="aboutme">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="assets/plugins/github-activity/dist/mustache/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
-    <!-- custom js -->
+        <div class="background-title text-center animate__animated animate__fadeInLeft">
+            <b>Games & Hobbies</b>
+        </div>
+
+        <div id="gamesAndHobbies" class="carousel carousel-dark slide animate__animated animate__fadeInLeft" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gamesAndHobbies" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Destiny"></button>
+                <button type="button" data-bs-target="#gamesAndHobbies" data-bs-slide-to="1" aria-label="MTG"></button>
+            </div>
+            <div class="carousel-inner container content work-padding">
+                <div class="carousel-item active">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#destiny" role="button" aria-expanded="true" aria-controls="destiny">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/destiny_logo.png" alt="Destiny" />
+                            </div>
+                            <h5 class="card-title"><b>Destiny</b> 🎮</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Warlock, since 2014</h6>
+                            <div class="collapse multi-collapse" id="destiny">
+                                <p class="card-text">
+                                    Played since Destiny 1 beta, main Warlock and master of Vault of Glass.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow work-padding-content">
+                        <div class="card-body" data-bs-toggle="collapse" href="#mtg" role="button" aria-expanded="false" aria-controls="mtg">
+                            <div class="position-absolute top-0 start-100px translate-middle">
+                                <img class="work-image shadow" src="assets/images/mtg_logo.webp" alt="MTG" />
+                            </div>
+                            <h5 class="card-title"><b>Magic The Gathering</b> 🃏</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Wizard, since 2005</h6>
+                            <div class="collapse multi-collapse" id="mtg">
+                                <p class="card-text">
+                                    Casual player since Onslaught, most recent into Commander games.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gamesAndHobbies" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gamesAndHobbies" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <footer class="container">
+            <div class="card shadow animate__animated animate__fadeInLeft">
+                <div class="card-body text-center">
+                    <ul class="social list-group list-group-horizontal justify-content-center">
+                        <li class="list-group-item"><a href="https://www.linkedin.com/in/gabrielfatec"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-group-item"><a href="https://github.com/gabrielqueiroz"><i class="fa fa-github-alt"></i></a></li>
+                        <li class="list-group-item"><a href="https://bitbucket.org/gabrielqueiroz/"><i class="fa fa-bitbucket"></i></a></li>
+                        <li class="list-group-item"><a href="https://medium.com/@gabrielqueiroz"><i class="fa fa-medium"></i></a></li>
+                        <li class="list-group-item"><a href="mailto:gabriel.fatec@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                    <small class="text-muted">Developed by <b>Gabriel Queiroz</b>, 2022</small>
+                    <p><b>Konami Code enabled 🎮</b></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>

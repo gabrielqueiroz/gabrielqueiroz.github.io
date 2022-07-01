@@ -9,7 +9,3 @@ My personal portfolio containing my updated contact info, work experience, perso
 - [Medium](https://medium.com/@gabrielqueiroz)
 - [Linkedin](https://www.linkedin.com/in/gabrielfatec)
 - [BitBucket](https://bitbucket.org/gabrielqueiroz/)
-
-## Credits
-
-Developed by Xiaoying Riley (UX designer) at 3rd Wave Media and modified by Gabriel Queiroz, under Creative Commons Attribution 3.0 License.

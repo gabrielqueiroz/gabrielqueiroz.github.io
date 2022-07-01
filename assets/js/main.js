@@ -1,66 +1,77 @@
-jQuery(document).ready(function($) {
+var konamyKeys = {
+  37: 'left',
+  38: 'up',
+  39: 'right',
+  40: 'down',
+  65: 'a',
+  66: 'b'
+};
 
+// 'official' Konami Code sequence
+var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
 
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    $(window).on('load', function() {
+var konamiCodePosition = 0;
 
-        $('.level-bar-inner').each(function() {
-        
-            var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
-        });
+var currentStyle = 'work'
 
-    });
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-    $("#rss-feeds").rss(
-    
-        //Change this to your own rss feeds
-        "http://feeds.feedburner.com/TechCrunch/startups",
-        
-        {
-        // how many entries do you want?
-        // default: 4
-        // valid values: any integer
-        limit: 3,
-        
-        // the effect, which is used to let the entries appear
-        // default: 'show'
-        // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideFastSynced',
-        
-        // outer template for the html transformation
-        // default: "<ul>{entries}</ul>"
-        // valid values: any string
-        layoutTemplate: "<div class='item'>{entries}</div>",
-        
-        // inner template for each entry
-        // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
-        // valid values: any string
-        entryTemplate: '<h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fa fa-external-link"></i>Read more</a></div>'
-        
-        }
-    );
+document.addEventListener('keydown', function(e) {
+  var key = konamyKeys[e.keyCode];
+  var requiredKey = konamiCode[konamiCodePosition];
 
-    /* Collapse and Expand Resources*/
-    $('.collapse-section .collapse-btn').on('click', function(e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $collapse = $this.closest('.collapse-group').find('.collapse');
-        $collapse.collapse('toggle');
-    });
-    
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    //GitHubActivity.feed({ username: "gabrielqueiroz", selector: "#ghfeed" });
+  if (key == requiredKey) {
+    console.log(key)
+    konamiCodePosition++;
 
+    if (konamiCodePosition == konamiCode.length) {
+      changeStyle();
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
 });
+
+function changeStyle() {
+  if (currentStyle === 'work') {
+    currentStyle = 'konami'
+
+    makeItInvisible('work')
+    makeItVisible('konami')
+
+    // document.body.classList.add('konami-background')
+    document.body.style.backgroundColor = "lightyellow";
+  } else {
+    currentStyle = 'work'
+
+    makeItInvisible('konami')
+    makeItVisible('work')
+
+    document.body.style.backgroundColor = "lightgray";
+    // document.body.classList.remove('konami-background')
+  }
+}
+
+async function makeItInvisible(elementId) {
+  var element = document.getElementById(elementId);
+
+  element.classList.remove("visible", "animate__fadeInLeft");
+  element.classList.add("animate__fadeOutRight");
+  await new Promise(resolve => setTimeout(resolve, 300));
+  element.classList.add("not-visible");
+}
+
+function makeItVisible(elementId) {
+  var element = document.getElementById(elementId);
+
+  element.classList.remove("not-visible", "animate__fadeOutRight");
+  element.classList.add("visible", "animate__fadeInLeft");
+}
+
+/* carousel */
+
+var workExperience = document.getElementById('workExperience')
+var carousel = new bootstrap.Carousel(workExperience)
+workExperience.addEventListener('slide.bs.carousel', function (e) {
+  let element = e.relatedTarget
+  element.classList.add("animate__fadeInUp")
+})
