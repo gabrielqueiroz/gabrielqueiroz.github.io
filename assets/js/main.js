@@ -56,14 +56,12 @@ function changeStyle() {
     makeItVisible('konami')
 
     document.body.classList.add('konami-background')
-    // document.body.style.backgroundColor = "lightyellow";
   } else {
     currentStyle = 'work'
 
     makeItInvisible('konami')
     makeItVisible('work')
 
-    // document.body.style.backgroundColor = "lightgray";
     document.body.classList.remove('konami-background')
   }
 }
@@ -83,12 +81,3 @@ function makeItVisible(elementId) {
   element.classList.remove("not-visible", "animate__fadeOutRight");
   element.classList.add("visible", "animate__fadeInLeft");
 }
-
-/* carousel */
-
-var workExperience = document.getElementById('workExperience')
-var carousel = new bootstrap.Carousel(workExperience)
-workExperience.addEventListener('slide.bs.carousel', function (e) {
-  let element = e.relatedTarget
-  element.classList.add("animate__fadeInUp")
-})
