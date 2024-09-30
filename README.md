@@ -1,8 +1,8 @@
 # Portfolio
 
-My personal portfolio containing my updated contact info, work experience, personal projects, resume, and more.
+My portfolio contains my updated contact info, work experience, personal projects, resume, and more.
 
-![Screen Shot 2022-06-30 at 8 07 25 PM](https://user-images.githubusercontent.com/4305837/176815796-1cb0017a-817c-49bf-8e0d-e80de0d7bac8.png)
+<img width="1362" alt="Screenshot 2024-09-29 at 11 33 56 PM" src="https://github.com/user-attachments/assets/ffdee773-0d31-4c7d-b0da-dc520f9d8f6b">
 
 ## Quick links
 
@@ -14,4 +14,4 @@ My personal portfolio containing my updated contact info, work experience, perso
 
 ## Suports Konami Code
 
-You can use Konami Code to change the portfolio 🎮
+Try using The Konami Code to change the portfolio! (↑ ↑ ↓ ↓ ← → ← → B A)
